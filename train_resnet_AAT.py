@@ -120,15 +120,3 @@ for epoch in range(epochs):
         print("✅ 最佳模型已保存")
 
 print("🎉 训练完成！")
-
-# ----------------------------
-# ✅ 可视化准确率变化
-# ----------------------------
-plt.plot(train_acc_list, label='Train Acc')
-plt.plot(val_acc_list, label='Val Acc')
-plt.xlabel("Epoch")
-plt.ylabel("Accuracy")
-plt.title("Training vs Validation Accuracy")
-plt.legend()
-plt.grid(True)
-plt.show()
